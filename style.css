@@ -48,8 +48,8 @@ img {
 .heading > p{
     text-overflow: ellipsis;
 }
-form {
-display: grid;
+form{
+    display: grid;
 grid-template-columns: repeat(2, 0.2fr);
 grid-template-rows: repeat(3, 1fr);
 gap: 1vw;
@@ -71,16 +71,20 @@ border-radius: 7px;
     margin-top: 1.5vh;
     display: flex;
     flex-direction: column;
-
+    
 }
-.submit{
-    background-color: #596D48;
-    border:solid 0.1px #596D48;
+#submit{
+    background-color: #1e5ca2;
+    border:solid 0.1px #1e5ca2;
     border-radius: 15px;
     min-height: 5vh;
     font-weight: bold;
-
 }
+.submit-transform{
+    transform: scale(1.1);
+    transition: transform 0.1   s;
+}
+
 .item input:focus{
     border: white 0.1px solid;
     box-shadow:yellow;  

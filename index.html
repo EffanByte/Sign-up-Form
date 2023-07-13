@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src = "script.js" defer ></script>
 </head>
 <body>
     
@@ -23,13 +24,13 @@
                         This is my first attempt at creating a sign-up page in HTML. I think it's going
                             pretty well and it's looking pretty stylish so far.
                     </p>
-                    <p>Lots of problems but I'm happy as long as the product works properly.</p>
+                    <p>Lots of problems but I'm happy as long as the product works</p>
                 </div>
             </div>
             <div class="cont2">
                 <div class = "inputs">
-                    <h2>Let's Do this!</h2>
-                <form>
+                    <h2>Let's Do this!</h2>     
+                <form id = "form">
                     <div class="item">
                         <label for="first_name">First Name</label>
                         <input type="text" id = "first_name">
@@ -49,20 +50,24 @@
                     </div><div class="item">
                 
                         <label for = "password">Password</label>
-                        <input class ="error" type = "password" id = "password">
+                        <input type = "password"name = "password" id = "password" required>
                 
-                    </div><div class="item">
+                    </div>
+                    <div class="item">
                         <label for = "confirm_password">Confirm Password</label>
-                        <input class = "error   " type = "password" id = "confirm_password">
+                        <input type = "password"name = "confirm_password" id = "confirm_password" required>
                     </div>
                 </form>
+                <div id = "error"></div>
                 </div>
             </div>
                         <div class="cont2">
                             <div class = 'last'>
-                                <button type="submit" class="submit">Create Account</button>
+                                <button type="submit" id="submit">Create Account</button>
                                 <div> Already Have an Account? <a href="./">Log In</a></div>
+                                    <p id="outputs"></p>
                             </div>
+                  
                         </div>
         </div>
 </body>
